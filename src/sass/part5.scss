@@ -134,7 +134,7 @@
       display: inline-block;
       width: 5px;
       height: 5px;
-      background: url('./img/icons/elips.png');
+      background: url('./images/icons/elips.png');
       vertical-align: top;
     }
   }
@@ -143,13 +143,13 @@
     margin: 0 3px;
 
     &--mobile {
-      background: url(img/icons/line.png);
+      background: url(images/icons/line.png);
       width: 1px;
       display: block;
     }
 
     &--tablet_desktop {
-      background: url(img/icons/tablet/line.png);
+      background: url(images/icons/tablet/line.png);
       width: 1px;
       display: none;
     }

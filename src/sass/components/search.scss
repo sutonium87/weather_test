@@ -14,7 +14,7 @@
     &::before {
       content: '';
       display: inline-block;
-      background: url(img/icon-location.svg) no-repeat center;
+      background: url(images/icon-location.svg) no-repeat center;
       opacity: 0.3;
       background-size: contain;
       width: 22px;
@@ -155,7 +155,7 @@
 
     &-list-content-renove-city__button {
       background-color: transparent;
-      background-image: url(img/icons/cross.svg);
+      background-image: url(images/icons/cross.svg);
       background-repeat: no-repeat;
       background-size: 10px;
       background-position: center;

@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
-    <!-- сюда импортируем статическую разметку -->
     <div class="background-wrapper">
       <div class="container">
-        <!-- 1 -->
         <section class="search-location">
           <form class="search-location__form">
             <input
@@ -55,7 +52,6 @@
             </button>
           </div>
         </section>
-
         <div class="today-container">
           <!-- 2 -->
           <section class="today-section">
@@ -84,7 +80,7 @@
                 <div class="date__sunrise">
                   <img
                     class="date__sunrise--icon"
-                    src="./img/sunrise.png"
+                    src="./images/sunrise.png"
                     alt=""
                   />
                   <p class="date__sunrise--time"></p>
@@ -92,7 +88,7 @@
                 <div class="date__sunset">
                   <img
                     class="date__sunset--icon"
-                    src="./img/sunset.png"
+                    src="./images/sunset.png"
                     alt=""
                   />
                   <p class="date__sunset--time"></p>
@@ -136,13 +132,13 @@
               <div class="five-days-containeer__scroll">
                 <img
                   id="left-arrow"
-                  src="./img/icons/left-arrow.png"
+                  src="./images/icons/left-arrow.png"
                   alt="left-arrow"
                   class="five-days-containeer__arrow five-days-containeer__arrow--hover"
                 />
                 <img
                   id="right-arrow"
-                  src="./img/icons/right-arrow.png"
+                  src="./images/icons/right-arrow.png"
                   alt="right-arrow"
                   class="five-days-containeer__arrow five-days-containeer__arrow--hover"
                 />
@@ -150,6 +146,7 @@
             </section>
             <!-- Part-6 -->
             <div class="moreInfo isHiden">
+              <!-- where the additional information will be displayed. -->
               <ul class="moreInfo__block"></ul>
               <div class="moreInfo_scroll">
                 <button
@@ -158,14 +155,14 @@
                 >
                   <img
                     id="left-arrow"
-                    src="./img/icons/left-arrow.png"
+                    src="./images/icons/left-arrow.png"
                     alt="left-arrow"
                   />
                 </button>
                 <button id="moreInfo-right-btn" class="moreInfo_scroll_arrow">
                   <img
                     id="right-arrow"
-                    src="./img/icons/right-arrow.png"
+                    src="./images/icons/right-arrow.png"
                     alt="right-arrow"
                   />
                 </button>
@@ -212,5 +209,49 @@
       </div>
     </div>
   </body>
-  <script src="./js/chart.js"></script>
 </html>
+
+<!-- This code represents an HTML document for a weather application web page:
+
+1. **Document Type and Language:**
+
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   
+   This declares the document type as HTML5 and sets the language of the document to English.
+
+2. **Head Section:**
+
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <title>Weather App</title>
+   </head>
+ 
+   - The `<meta>` tags define character encoding, viewport settings for responsive design, and compatibility settings for Internet Explorer.
+   - The `<title>` tag sets the title of the web page to "Weather App."
+
+3. **Body Section:**
+
+   The body of the HTML document contains the main content of the web page, including various `div` elements and sections.
+
+4. **Content Sections:**
+
+   The code contains multiple nested `div` elements and sections that structure the content of the web page. Some notable sections include:
+
+   - A search location section with a form and search button.
+   - A container for today's weather information, including date, time, sunrise, sunset, and a weather-related quote.
+   - A container for five days of weather information, with buttons to switch between today and five-day forecasts.
+   - A section with a chart to display weather data.
+
+5. **SVG Images:**
+
+   The code includes several SVG images represented using the `<svg>` tag with `<path>` elements inside. These SVG images are used for buttons, arrows, and icons throughout the web page.
+
+6. **CSS Classes and JavaScript Hooks:**
+
+   The `class` attributes are used to assign CSS classes to elements for styling, while specific classes like `js-search-location__form-btn` and `js-search-location__form-btn` seem to be used as hooks for JavaScript functionality.
+
+Overall, this HTML code defines the structure and layout of a weather application web page, including various sections for displaying weather information, buttons for interaction, and SVG images for icons and visuals.

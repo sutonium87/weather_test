@@ -107,7 +107,7 @@
   &__pressure {
     margin-bottom: 5px;
     &::before {
-      content: url('./img/icons/pressure.png');
+      content: url('./images/icons/pressure.png');
       width: auto;
       height: auto;
       padding-right: 10px;
@@ -117,7 +117,7 @@
   &__humidity {
     margin-bottom: 5px;
     &::before {
-      content: url('./img/icons/humidity.png');
+      content: url('./images/icons/humidity.png');
       width: auto;
       height: auto;
       padding-right: 16px;
@@ -127,7 +127,7 @@
   }
   &__wind {
     &::before {
-      content: url('./img/icons/wind.png');
+      content: url('./images/icons/wind.png');
       width: auto;
       height: auto;
       padding-right: 10px;

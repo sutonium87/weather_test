@@ -1,8 +1,7 @@
 const quotes = [
   {
     number: 1,
-    text:
-      "People often say that motivation doesn't last. Well, neither does bathing -- that's why we recommend it daily.",
+    text: "People often say that motivation doesn't last. Well, neither does bathing -- that's why we recommend it daily.",
     author: 'Zig Ziglar',
   },
   {
@@ -22,8 +21,7 @@ const quotes = [
   },
   {
     number: 5,
-    text:
-      'Sales are contingent upon the attitude of the salesman -- not the attitude of the prospect.',
+    text: 'Sales are contingent upon the attitude of the salesman -- not the attitude of the prospect.',
     author: 'W. Clement Stone',
   },
   {
@@ -38,8 +36,7 @@ const quotes = [
   },
   {
     number: 8,
-    text:
-      "The golden rule for every businessman is this: Put yourself in your customer's place.",
+    text: "The golden rule for every businessman is this: Put yourself in your customer's place.",
     author: 'Orison Swett Marden',
   },
   {
@@ -49,8 +46,7 @@ const quotes = [
   },
   {
     number: 10,
-    text:
-      'The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are. They are frank in admitting this and are willing to pay for such talents.',
+    text: 'The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are. They are frank in admitting this and are willing to pay for such talents.',
     author: 'Antos Parrish',
   },
   {
@@ -60,44 +56,37 @@ const quotes = [
   },
   {
     number: 12,
-    text:
-      'Nothing is really work unless you would rather be doing something else.',
+    text: 'Nothing is really work unless you would rather be doing something else.',
     author: 'J.M. Barrie',
   },
   {
     number: 13,
-    text:
-      "Without a customer, you don't have a business -- all you have is a hobby.",
+    text: "Without a customer, you don't have a business -- all you have is a hobby.",
     author: 'Don Peppers',
   },
   {
     number: 14,
-    text:
-      "To be most effective in sales today, it's imperative to drop your 'sales' mentality and start working with your prospects as if they've already hired you.",
+    text: "To be most effective in sales today, it's imperative to drop your 'sales' mentality and start working with your prospects as if they've already hired you.",
     author: 'Jill Konrath',
   },
   {
     number: 15,
-    text:
-      "Pretend that every single person you meet has a sign around his or her neck that says, 'Make me feel important.' Not only will you succeed in sales, you will succeed in life.",
+    text: "Pretend that every single person you meet has a sign around his or her neck that says, 'Make me feel important.' Not only will you succeed in sales, you will succeed in life.",
     author: 'Mary Kay Ash',
   },
   {
     number: 16,
-    text:
-      "It's not just about being better. It's about being different. You need to give people a reason to choose your business.",
+    text: "It's not just about being better. It's about being different. You need to give people a reason to choose your business.",
     author: 'Tom Abbott',
   },
   {
     number: 17,
-    text:
-      'Being good in business is the most fascinating kind of art. Making money is art and working is art and good business is the best art.',
+    text: 'Being good in business is the most fascinating kind of art. Making money is art and working is art and good business is the best art.',
     author: 'Andy Warhol',
   },
   {
     number: 18,
-    text:
-      "Be patient with yourself. Self-growth is tender; it's holy ground. There's no greater investment.",
+    text: "Be patient with yourself. Self-growth is tender; it's holy ground. There's no greater investment.",
     author: 'Stephen Covey',
   },
   {
@@ -107,20 +96,17 @@ const quotes = [
   },
   {
     number: 20,
-    text:
-      "Working hard for something we don't care about is called stressed; working hard for something we love is called passion.",
+    text: "Working hard for something we don't care about is called stressed; working hard for something we love is called passion.",
     author: 'Simon Sinek',
   },
   {
     number: 21,
-    text:
-      "I'd rather regret the things I've done than regret the things I haven't done.",
+    text: "I'd rather regret the things I've done than regret the things I haven't done.",
     author: 'Lucille Ball',
   },
   {
     number: 22,
-    text:
-      "I didn't get there by wishing for it or hoping for it, but by working for it.",
+    text: "I didn't get there by wishing for it or hoping for it, but by working for it.",
     author: 'Estée Lauder',
   },
   {
@@ -130,32 +116,27 @@ const quotes = [
   },
   {
     number: 24,
-    text:
-      "The key to life is accepting challenges. Once someone stops doing this, he's dead.",
+    text: "The key to life is accepting challenges. Once someone stops doing this, he's dead.",
     author: 'Bette Davis',
   },
   {
     number: 25,
-    text:
-      'Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new.',
+    text: 'Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new.',
     author: 'Brian Tracy',
   },
   {
     number: 26,
-    text:
-      'Challenges are what make life interesting and overcoming them is what makes life meaningful.',
+    text: 'Challenges are what make life interesting and overcoming them is what makes life meaningful.',
     author: 'Joshua J. Marine',
   },
   {
     number: 27,
-    text:
-      "Don't let the fear of losing be greater than the excitement of winning.",
+    text: "Don't let the fear of losing be greater than the excitement of winning.",
     author: 'Robert Kiyosaki',
   },
   {
     number: 28,
-    text:
-      'How dare you settle for less when the world has made it so easy for you to be remarkable?',
+    text: 'How dare you settle for less when the world has made it so easy for you to be remarkable?',
     author: 'Seth Godin',
   },
   {
@@ -170,26 +151,22 @@ const quotes = [
   },
   {
     number: 31,
-    text:
-      "Grit is that ‘extra something' that separates the most successful people from the rest. It's the passion, perseverance, and stamina that we must channel in order to stick with our dreams until they become a reality.",
+    text: "Grit is that ‘extra something' that separates the most successful people from the rest. It's the passion, perseverance, and stamina that we must channel in order to stick with our dreams until they become a reality.",
     author: 'Travis Bradberry',
   },
   {
     number: 32,
-    text:
-      'Failure after long perseverance is much grander than never to have a striving good enough to be called a failure.',
+    text: 'Failure after long perseverance is much grander than never to have a striving good enough to be called a failure.',
     author: 'George Eliot',
   },
   {
     number: 33,
-    text:
-      'The secret of joy in work is contained in one word -- excellence. To know how to do something well is to enjoy it.',
+    text: 'The secret of joy in work is contained in one word -- excellence. To know how to do something well is to enjoy it.',
     author: 'Pearl Buck',
   },
   {
     number: 34,
-    text:
-      'Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.',
+    text: 'Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.',
     author: 'Dale Carnegie',
   },
   {
@@ -199,8 +176,7 @@ const quotes = [
   },
   {
     number: 36,
-    text:
-      'The ladder of success is best climbed by stepping on the rungs of opportunity.',
+    text: 'The ladder of success is best climbed by stepping on the rungs of opportunity.',
     author: 'Ayn Rand',
   },
   {
@@ -210,32 +186,27 @@ const quotes = [
   },
   {
     number: 38,
-    text:
-      'The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will.',
+    text: 'The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will.',
     author: 'Vince Lombardi',
   },
   {
     number: 39,
-    text:
-      'Obstacles are those frightful things you see when you take your eyes off your goal.',
+    text: 'Obstacles are those frightful things you see when you take your eyes off your goal.',
     author: 'Henry Ford',
   },
   {
     number: 40,
-    text:
-      'It is your determination and persistence that will make you a successful person.',
+    text: 'It is your determination and persistence that will make you a successful person.',
     author: 'Kenneth J Hutchins',
   },
   {
     number: 41,
-    text:
-      'You can waste your lives drawing lines. Or you can live your life crossing them.',
+    text: 'You can waste your lives drawing lines. Or you can live your life crossing them.',
     author: 'Shonda Rhimes',
   },
   {
     number: 42,
-    text:
-      'Determine that the thing can and shall be done, and then we shall find the way.',
+    text: 'Determine that the thing can and shall be done, and then we shall find the way.',
     author: 'Abraham Lincoln',
   },
   {
@@ -255,8 +226,7 @@ const quotes = [
   },
   {
     number: 46,
-    text:
-      "Be poor, humble and driven (PhD). Don't be afraid to shift or pivot.",
+    text: "Be poor, humble and driven (PhD). Don't be afraid to shift or pivot.",
     author: 'Alex Rodriguez',
   },
   {
@@ -269,16 +239,28 @@ const quotes = [
 function renderRandomQuote() {
   const quoteTextRef = document.querySelector('.quote__text');
   const quoteAuthorRef = document.querySelector('.quote__author');
-  
+
   const element = quotes[Math.floor(Math.random() * quotes.length)];
- 
+
   quoteTextRef.textContent = element.text;
   quoteAuthorRef.textContent = element.author;
 }
 
 renderRandomQuote();
 
+// This code defines an array of quotes and a function to randomly render a quote from the array onto a webpage:
 
+// 1. **`quotes` Array**:
+//    - The `quotes` array contains objects, each representing a quote with properties `number`, `text`, and `author`. Each object corresponds to a different quote, and they are stored in the array.
 
+// 2. **`renderRandomQuote` Function**:
+//    - This function is responsible for rendering a randomly selected quote onto the webpage.
+//    - It first selects two elements from the DOM: `quoteTextRef` (this represents the quote text) and `quoteAuthorRef` (this represents the quote author).
+//    - It then randomly selects an element (quote object) from the `quotes` array using `Math.floor(Math.random() * quotes.length)`.
+//    - It updates the text content of `quoteTextRef` with the `text` property of the randomly selected quote.
+//    - It updates the text content of `quoteAuthorRef` with the `author` property of the randomly selected quote.
 
+// 3. **`renderRandomQuote()` Call**:
+//    - The `renderRandomQuote()` function is called at the end of the code snippet to render a random quote immediately when the page loads.
 
+// In summary, this code provides a simple way to display a random quote on a webpage. The quotes are stored in an array, and when the `renderRandomQuote` function is called, it selects a random quote from the array and updates the content of designated HTML elements to display the selected quote's text and author. The `renderRandomQuote()` function is invoked once when the page loads, so a random quote is displayed to the user.

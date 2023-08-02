@@ -1,57 +1,57 @@
-// Переменные для пагинов
+// Pagination variables
 import axios from 'axios';
 
-// Переменные для обработки погоды
+// Variables for weather processing
 let location = '';
 let req = '';
 let oneDayData = {};
 let fiveDayData = {};
 let moreInfoData = {};
 
-// Переменные для api
+// Variables for api
 const OWM = 'https://api.openweathermap.org/data/2.5/';
-const apiKey = '48f3906fa74131a752b29b56bb64ec12';
+const apiKey = '8601181a914c11cc995b00a13512046c';
 
-// Получаем правильную ссылку
+// Getting the right link
 const GetOWM_Request = RequestType =>
   OWM + RequestType + '?q=' + location + '&appid=' + apiKey;
 
-// Делаем запрос на сервер и получаем данные
+// Make a request to the server and get the data
 const getWeatherData = async url => axios.get(url);
 
-// Функции для получения данных с api
+// Functions to retrieve data from api
 const getOneDayData = searchName => {
   location = searchName;
   req = GetOWM_Request('weather');
   return getWeatherData(req).then(response =>
-    dataProcessingOneDay(response.data),
+    dataProcessingOneDay(response.data)
   );
-}; // на один день
+}; // for one day
 
 const getFiveDayData = () => {
   req = GetOWM_Request('forecast');
   return getWeatherData(req).then(response =>
-    dataProcessingFiveDays(response.data),
+    dataProcessingFiveDays(response.data)
   );
-}; // на 5 дней
+}; // for 5 days
 
-// Получаем день недели
+// We get the day of the week
 const weekDayNow = data => {
   const date = new Date(data * 1000);
   const weekDay = new Intl.DateTimeFormat('en', { weekday: 'long' }).format(
-    date,
+    date
   );
   return weekDay;
 };
 
-// Получаем месяц
+// We get a month
 const monthNow = data => {
   const date = new Date(data * 1000);
   const month = new Intl.DateTimeFormat('en', { month: 'short' }).format(date);
   return month;
 };
 
-// Получаем обьект icon data
+// Get icon data object
 const getIconData = data => {
   const date = new Date(data[0].dt * 1000);
   date.setMilliseconds(0);
@@ -80,7 +80,7 @@ const getIconData = data => {
   }
 };
 
-// Расчет мин/макс температуры
+// Calculation of min/max temperature
 const mathTemp = data => {
   data = data.map(e => Math.floor(e.main.temp - 273.15));
   const temp = {
@@ -90,10 +90,10 @@ const mathTemp = data => {
   return temp;
 };
 
-// Конвертация в цельсий
+// Conversion to Celsius
 const conToCel = data => Math.floor(data - 273.15);
 
-// Добавляем недостающий 0
+// Add the missing 0
 function addZero(i) {
   if (i < 10) {
     i = '0' + i;
@@ -101,13 +101,13 @@ function addZero(i) {
   return i;
 }
 
-// Получить текущее время
+// Get the current time
 const getCurrentTime = data => {
   const dataTime = new Date(data * 1000);
   return addZero(dataTime.getHours()) + ':' + addZero(dataTime.getMinutes());
 };
 
-// Обработка данных на один день
+// Data processing for one day
 const dataProcessingOneDay = response => {
   const main = response.main;
   const sys = response.sys;
@@ -125,7 +125,7 @@ const dataProcessingOneDay = response => {
   return oneDayData;
 };
 
-// Обработка данных на 5 дней
+// Data processing for 5 days
 const getDate = data => new Date(data.dt * 1000).getDate();
 const dataProcessingFiveDays = response => {
   const dates = response.list
@@ -153,7 +153,7 @@ const dataProcessingFiveDays = response => {
   return fiveDayData;
 };
 
-// Обработка данных для блока more info
+// Data processing for more info block
 const dataProcessingMoreInfo = () => {
   moreInfoData = fiveDayData.list.map(e => ({
     date: e.date,
@@ -177,3 +177,44 @@ export default {
   getFiveDayData,
   dataProcessingMoreInfo,
 };
+
+// This code is a JavaScript module that serves as a service layer for processing weather data obtained from the OpenWeatherMap API. It exports several functions and data objects that can be used to retrieve and process weather data for one day, five days, and more detailed information:
+
+// 1. Importing Libraries and Modules:
+//    - The code imports the `axios` library, which is used to make HTTP requests.
+//    - It imports the `background-image-service`, `renderOneDay`, and `background-image` modules, which are not present in this code snippet.
+
+// 2. Variable Declarations:
+//    - Variables `location`, `req`, `oneDayData`, `fiveDayData`, and `moreInfoData` are declared to store weather data and API request-related information.
+//    - `OWM` and `apiKey` are constants that store the base URL of the OpenWeatherMap API and the API key, respectively.
+
+// 3. Request Building Functions:
+//    - The `GetOWM_Request` function is defined to build the URL for API requests based on the `location` and the desired request type (e.g., `'weather'` or `'forecast'`).
+
+// 4. API Request Functions:
+//    - `getOneDayData` and `getFiveDayData` are asynchronous functions that make API requests to OpenWeatherMap for weather data for one day and five days, respectively.
+//    - They call the `getWeatherData` function passing the generated request URL and use `dataProcessingOneDay` and `dataProcessingFiveDays` functions to process the API response data.
+
+// 5. Date and Time Formatting Functions:
+//    - `weekDayNow` and `monthNow` functions take a UNIX timestamp and return the corresponding day of the week and month, respectively.
+
+// 6. Icon Data Retrieval Function:
+//    - `getIconData` function takes an array of weather data and returns an object with information about the weather icon and its description.
+
+// 7. Temperature Calculation Functions:
+//    - `mathTemp` function takes an array of weather data and calculates the minimum and maximum temperatures from the given data.
+
+// 8. Time Conversion and Formatting Functions:
+//    - `conToCel` function takes a temperature value in Kelvin and converts it to Celsius.
+//    - `addZero` function takes a number and adds a leading zero if it is less than 10.
+//    - `getCurrentTime` function takes a UNIX timestamp and returns the time in "HH:mm" format.
+
+// 9. Data Processing Functions:
+//    - `dataProcessingOneDay` processes the API response data for one day and returns a processed object containing weather information for one day.
+//    - `dataProcessingFiveDays` processes the API response data for five days and returns a processed object containing weather information for five days.
+
+// 10. Data Processing for More Info Block:
+//    - `dataProcessingMoreInfo` takes the processed five-day data and maps it to create a new array with more detailed information about each day, including time, temperature, humidity, pressure, wind speed, and weather icon.
+
+// 11. Exported Object:
+//    - The module exports an object containing references to `oneDayData`, `getOneDayData`, `getFiveDayData`, and `dataProcessingMoreInfo`.

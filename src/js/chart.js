@@ -1,4 +1,4 @@
-import Chart from 'chart.js/auto'; // Use chart.js/auto to include all chart types
+import Chart from 'chart.js/auto';
 import refs from './refs';
 import api from './apiService';
 const moment = require('moment-timezone');
@@ -118,7 +118,7 @@ refs.btnShowChart.addEventListener('click', onShowChartClick);
 refs.headerOfShowChart.addEventListener('click', onShowChartClick);
 refs.btnHideChart.addEventListener('click', onHideChartClick);
 refs.headerOfHideChart.addEventListener('click', onHideChartClick);
-// Слушаем кнопки Today
+// Listening to the Today button
 refs.btnOneDay[0].addEventListener('click', onHideChartClick);
 refs.btnOneDay[1].addEventListener('click', onHideChartClick);
 
@@ -132,3 +132,33 @@ function onHideChartClick() {
   refs.chartBox.classList.remove('visible');
   refs.boxOfShowChart.classList.remove('hidden');
 }
+// This code sets up and renders a line chart using the Chart.js library to display weather indicators such as temperature, humidity, wind speed, and pressure. The chart data is obtained from an API and processed before being used to render the chart.
+
+// Let's break down the code step by step:
+
+// 1. Importing Dependencies:
+//    - The code imports the necessary modules and libraries, including `Chart` from `chart.js/auto`, which is the Chart.js library that supports the latest versions.
+
+// 2. Chart Data and Calculation Functions:
+//    - The code declares a `chartData` object that will hold the processed data for rendering the chart.
+//    - The `average` function is defined, which calculates the average value of a given property (`req`) in an array of data. It is used to compute the average temperature, humidity, pressure, and wind speed.
+
+// 3. Chart Rendering Functions:
+//    - The `getChartData` function retrieves data from the API using the `dataProcessingMoreInfo` function from the `apiService` module.
+//    - The data is then processed to extract the dates, average temperature, average humidity, average pressure, and average wind speed for each day.
+//    - The processed data is stored in the `chartData` object.
+
+// 4. Chart Rendering:
+//    - The `renderChart` function creates or updates the line chart using the Chart.js library.
+//    - The function checks if a chart instance (`myChart`) already exists and, if so, destroys it to avoid duplicates.
+//    - The `Chart` constructor is used to create a new line chart instance (`myChart`) with the appropriate chart data and options.
+
+// 5. Event Listeners:
+//    - Event listeners are set up to handle user interactions:
+//      - The `onShowChartClick` function is called when the user clicks on elements with the class `btnShowChart` or `headerOfShowChart`. It hides a specific box (`boxOfShowChart`) and shows the chart box (`chartBox`). Then, it calls the `renderChart` function to display the chart.
+//      - The `onHideChartClick` function is called when the user clicks on elements with the class `btnHideChart` or `headerOfHideChart`. It hides the chart box and shows the hidden box with class `boxOfShowChart`.
+
+// 6. Additional Event Listeners:
+//    - The `renderChart` function is also called when the user clicks on the "Today" button (`btnOneDay[0]` and `btnOneDay[1]`) to ensure that the chart updates if there is any change in the displayed weather data.
+
+// Overall, this code sets up a line chart using Chart.js to display average weather indicators for each day obtained from the API response. The chart can be shown and hidden based on user interactions, allowing the user to view the weather trends over time.
